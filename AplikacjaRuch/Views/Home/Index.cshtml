@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<h2>Wyszukaj</h2>
+
+<form method="post" action="@Url.Action("GetPoints", "PwR")">
+    <label for="partnerId">Nazwa użytkownika:</label>
+    <input type="text" id="partnerId" name="partnerId" required />
+
+    <label for="partnerKey">Klucz:</label>
+    <input type="text" id="partnerKey" name="partnerKey" required />
+
+    <label for="city">Miasto:</label>
+    <input type="text" id="city" name="city" required />
+
+    <button type="submit">Wyszukaj punktu</button>
+</form>

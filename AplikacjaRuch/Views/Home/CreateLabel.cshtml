@@ -1,0 +1,14 @@
+﻿@model LabelRequest
+
+<form asp-action="GenerateLabel" method="post">
+    <label for="SenderName">Nadawca:</label>
+    <input type="text" name="SenderName" required />
+
+    <label for="ReceiverName">Odbiorca:</label>
+    <input type="text" name="ReceiverName" required />
+
+    <label for="PointId">ID Punktu:</label>
+    <input type="text" name="PointId" required />
+
+    <input type="submit" value="Generuj etykietę" />
+</form>
